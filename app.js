@@ -291,15 +291,18 @@ if (port == null || port == "") {
 
 
 // Webpages 
+app.get("/home",(req,res)=>{
+  res.render('home/home');
+})
 app.get("/institute", (req, res)=>{
   res.render("institute/institute");
 });
 
 app.get('/internship',(req,res)=>{
   res.render('internship/internship');
-})
-
+});
 
 app.listen(port, function() {
   console.log("Server started on port 3000.");
 });
+
