@@ -302,6 +302,10 @@ app.get('/internship',(req,res)=>{
   res.render('internship/internship');
 });
 
+app.get('/placement',(req,res)=>{
+  res.render('placement/placement');
+});
+
 app.get("/forum", (req, res)=>{
   res.render("institute/forum");
 });
