@@ -9,7 +9,7 @@ const passportLocalMongoose = require("passport-local-mongoose");
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const findOrCreate = require('mongoose-findorcreate');
 
-const app = express(); 
+const app = express();
 
 
 
@@ -312,6 +312,10 @@ app.get('/placement',(req,res)=>{
 
 app.get("/forum", (req, res)=>{
   res.render("forum/forum");
+});
+
+app.get('/registration',(req,res)=>{
+  res.render('registration/registration');
 });
 
 app.listen(port, function() {
