@@ -76,7 +76,7 @@ passport.use(new GoogleStrategy({
 ));
 
 app.get("/", function(req, res){
-  res.render("home");
+  res.render("login/home");
 });
 
 app.get("/auth/google",
@@ -91,12 +91,12 @@ app.get("/auth/google/secrets",
   });
 
 app.get("/login", function(req, res){
-  res.render("login");
+  res.render("login/login");
 });
 
 app.get("/admin" , function(req,res)
 {
-  res.render("admin")
+  res.render("login/admin")
 })
 
 app.get("/List-of-users" , function(req,res)
@@ -115,11 +115,11 @@ app.get("/List-of-users" , function(req,res)
 
 app.get("/register" , function(req,res)
 {
-  res.render("register")
+  res.render("login/register")
 })
 
 app.get("/register", function(req, res){
-  res.render("register");
+  res.render("login/register");
 });
 
 app.get("/secrets", function(req, res){
@@ -129,7 +129,7 @@ app.get("/secrets", function(req, res){
     } else {
       if (foundUsers) {
       [{name,username}] = foundUsers;
-        res.render("secrets" , {name : name , username :username});
+        res.render("login/secrets" , {name : name , username :username});
       }
     }
   });
@@ -143,23 +143,23 @@ app.get("/logout", function(req, res){
 app.get("/blocked" , function(req,res)
 {
   req.logout();
-  res.render("blocked")
+  res.render("login/blocked")
 })
 
 app.get("/disable" , function(req , res)
 {
-  res.render("disable")
+  res.render("login/disable")
 });
 
 
 app.get("/added" , function(req,res)
 {
-  res.render("added")
+  res.render("login/added")
 })
 
 app.get("/cdisable" , function(req , res)
 {
-  res.render("cdisable")
+  res.render("login/cdisable")
 })
 
 app.post("/disable" , function(req , res)
