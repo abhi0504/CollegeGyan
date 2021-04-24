@@ -190,6 +190,10 @@ app.post("/disable" , function(req , res)
 
 })
 
+app.get('/internship',(req,res)=>{
+  res.render('internship/internship');
+})
+
 app.post("/register", function(req, res){
   var today = new Date();
   var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
