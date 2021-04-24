@@ -879,6 +879,95 @@
   background-color: #fff; }
 
 
+
+
+/* Home Section  */
+.main-title{
+  font-size: 2.8rem;
+  padding: 0 0 1.5rem;
+}
+.row-1{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding:8rem 4rem 4rem;
+}
+
+.text-block{
+  width: 55%;
+}
+
+.text-block p{
+  width: 88%;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: #4e5863;
+}
+
+.image-block{
+  width: 45%;
+}
+
+.image-block img{
+  width: 40%;
+  transition: all 0.3s ease-in-out;
+}
+
+.image-block img:hover{
+  scale: 1.2;
+  outline: solid 8px royalblue;
+  outline-offset: 10px;
+}
+
+.img-1{
+  position: relative;
+  top: 5rem;
+  left: 3rem;
+}
+
+.img-2{
+  position: relative;
+  top: 0;
+  left: -3rem;
+  z-index: 2;
+}
+
+.img-3{
+  position: relative;
+  top: -6.5rem;
+  left: 26rem;
+}
+
+
+.sel-row{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2rem 0 0;
+  width: 100%;
+}
+
+.sel-1{
+  padding: 0 2rem 0 0;
+  font-size: 1.3rem;
+}
+
+.sel-2{
+  font-size: 1.3rem;
+  padding: 0 2rem;
+}
+
+
+.dotted-hr-2{
+  margin: 0 auto ;
+  border:none;
+  border-top:12px dotted #f00;
+  color:#fff;
+  height:1px;
+  width:20%;
+  
+}
+
 /* Internship-Section */
 *{
   margin: 0;
@@ -920,8 +1009,9 @@
   color:#fff;
   height:1px;
   width:20%;
-  
+
 }
+
 
 .company-table {
   max-width: 1000px;
@@ -991,6 +1081,7 @@
   font-size: 2.5rem;
   padding: 2rem 0 0;
   font-weight: 600;
+  text-align: center;
 }
 .main-row{
   display: flex;
@@ -1075,3 +1166,13 @@
   text-decoration: none;
   color: #fff;
 }
+
+<<<<<<< HEAD
+/*-----forum css-------*/
+
+.qna-container{
+  border: 1px #ccc solid;
+  padding: 10px;
+}
+=======
+>>>>>>> 7abfc1a016fd9ac74142f114554859d6ce05205a

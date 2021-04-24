@@ -290,7 +290,10 @@ if (port == null || port == "") {
 
 
 
-// Webpages 
+// Webpages
+app.get("/home",(req,res)=>{
+  res.render('home/home');
+})
 app.get("/institute", (req, res)=>{
   res.render("institute/institute");
 });
@@ -301,8 +304,11 @@ app.get("/AskAQues", (req, res)=>{
 
 app.get('/internship',(req,res)=>{
   res.render('internship/internship');
-})
+});
 
+app.get("/forum", (req, res)=>{
+  res.render("institute/forum");
+});
 
 app.listen(port, function() {
   console.log("Server started on port 3000.");
