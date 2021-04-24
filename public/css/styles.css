@@ -968,6 +968,24 @@
   
 }
 
+.row-2{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding:8rem 4rem 8rem;
+}
+
+.row-2 .image-block img{
+  width: 70%;
+  transition: all 0.3s ease-in-out;
+}
+
+.forum-cta{
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+
 /* Internship-Section */
 *{
   margin: 0;
@@ -1167,12 +1185,9 @@
   color: #fff;
 }
 
-<<<<<<< HEAD
 /*-----forum css-------*/
 
 .qna-container{
   border: 1px #ccc solid;
   padding: 10px;
 }
-=======
->>>>>>> 7abfc1a016fd9ac74142f114554859d6ce05205a
