@@ -76,7 +76,7 @@ passport.use(new GoogleStrategy({
 ));
 
 app.get("/", function(req, res){
-  res.render("login/home");
+  res.render("home/home");
 });
 
 
