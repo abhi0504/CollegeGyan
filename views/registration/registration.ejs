@@ -1,0 +1,55 @@
+<%- include('../partials/header') %>
+
+<body class="llb">
+<div class="section-title">
+  <h2>Registration Form</h2>
+</div>
+<div ><div class="container mt-5 ">
+    <div class="row justify-content-center">
+      <div class="col-8">
+        <div class="card">
+          <div class="card-body">
+
+            <!-- Makes POST request to /login route -->
+            <form action="/register" method="POST">
+              <div class="form-group">
+                <label for="name">Full name</label><br>
+                <input type="text" name="name" class="form-control" id="name" required/>
+              </div>
+
+              <div class="form-group">
+                <label for="contact">Contact Number</label><br>
+                <input type="tel" name="contact" class="form-control" id="contact" required />
+              </div>
+
+              <div class="form-group">
+                <label for="Age">Description (Alumini or Student)</label><br>
+                <input type="text" name="description" class="form-control" id="description" required />
+              </div>
+
+              <div class="form-group">
+                <label for="blood_grp">Occupation/Comapany OR Degree/Batch/Branch</label><br>
+                <input type="text" name="occupation" class="form-control" id="occupation" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email ID</label><br>
+                <input type="email" name="username" class="form-control" id="username" required />
+              </div>
+
+              <div class="form-group">
+                <label for="Password">Password</label><br>
+                <input type="text" name="password" class="form-control" id="password" required />
+              </div>
+
+              <button type="submit" class="btn btn-dark">Register</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div></div>
+
+<%- include('../partials/footer') %>
