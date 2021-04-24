@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass public/sass/main.scss public/css/styles.css -w"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +24,7 @@
     "mongoose": "^5.9.6",
     "mongoose-encryption": "^2.0.2",
     "mongoose-findorcreate": "^3.0.0",
+    "node-sass": "^5.0.0",
     "passport": "^0.4.1",
     "passport-google-oauth20": "^2.0.0",
     "passport-local": "^1.0.0",
