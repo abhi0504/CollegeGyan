@@ -1,0 +1,44 @@
+<%- include('../partials/header') %>
+<main>
+    <section>
+        <div class="row-1">
+            <div class="text-block">
+                <h1 class="main-title">Welcome to {name}</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>
+                    Please chose city and college:  
+                </p>
+                <div class="sel-row">
+                    <div class="sel-1">
+                        <select name="select-profession" id="select-profession">
+                            <option value="hacker">Delhi</option>
+                            <option value="gamer" disabled>Noida</option>
+                            <option value="developer" disabled>Gurgaon</option>
+                            <option value="programmer" disabled>Mumbai</option>
+                          </select>
+                    </div>
+
+                    <div class="sel-2">
+                        <select name="select-profession" id="select-profession">
+                            <option value="hacker">Delhi Technological University (DTU)</option>
+                            <option value="gamer" disabled>Netaji Subhas University of Technology (NSUT)</option>
+                          </select>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Go</button>
+                  </div>
+                  
+            </div>
+  
+            <div class="image-block">
+              <img class = "img-1" src="./assets/dtuimg.jpg" alt="">
+              <img class = "img-2" src="./assets/dtuimg.jpg" alt="">
+              <img class = "img-3" src="./assets/dtuimg.jpg" alt="">
+            </div>
+        </div>    
+    </section>
+
+    <hr class="dotted-hr-2">
+
+</main>
+
+<%- include('../partials/footer') %>

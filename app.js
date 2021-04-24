@@ -291,6 +291,9 @@ if (port == null || port == "") {
 
 
 // Webpages
+app.get("/home",(req,res)=>{
+  res.render('home/home');
+})
 app.get("/institute", (req, res)=>{
   res.render("institute/institute");
 });
