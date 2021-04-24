@@ -299,7 +299,7 @@ app.get("/institute", (req, res)=>{
 });
 
 app.get("/AskAQues", (req, res)=>{
-  res.render("institute/askaques");
+  res.render("forum/askaques");
 });
 
 app.get('/internship',(req,res)=>{
@@ -311,7 +311,7 @@ app.get('/placement',(req,res)=>{
 });
 
 app.get("/forum", (req, res)=>{
-  res.render("institute/forum");
+  res.render("forum/forum");
 });
 
 app.get('/registration',(req,res)=>{
