@@ -1070,3 +1070,8 @@
   text-decoration: none;
   color: #3498db;
 }
+
+.btn-blue-qa a:hover{
+  text-decoration: none;
+  color: #fff;
+}
