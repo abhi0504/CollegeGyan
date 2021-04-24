@@ -79,9 +79,6 @@ app.get("/", function(req, res){
   res.render("login/home");
 });
 
-app.get("/institute", function(req, res){
-  res.render("institute");
-})
 
 app.get("/auth/google",
   passport.authenticate('google', { scope: ["profile"] })
@@ -194,9 +191,7 @@ app.post("/disable" , function(req , res)
 
 })
 
-app.get('/internship',(req,res)=>{
-  res.render('internship/internship');
-})
+
 
 app.post("/register", function(req, res){
   var today = new Date();
@@ -292,6 +287,18 @@ let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;
 }
+
+
+
+// Webpages 
+app.get("/institute", (req, res)=>{
+  res.render("institute/institute");
+});
+
+app.get('/internship',(req,res)=>{
+  res.render('internship/internship');
+})
+
 
 app.listen(port, function() {
   console.log("Server started on port 3000.");
