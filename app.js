@@ -299,15 +299,19 @@ app.get("/institute", (req, res)=>{
 });
 
 app.get("/AskAQues", (req, res)=>{
-  res.render("institute/askaques");
+  res.render("forum/askaques");
 });
 
 app.get('/internship',(req,res)=>{
   res.render('internship/internship');
 });
 
+app.get('/placement',(req,res)=>{
+  res.render('placement/placement');
+});
+
 app.get("/forum", (req, res)=>{
-  res.render("institute/forum");
+  res.render("forum/forum");
 });
 
 app.listen(port, function() {
