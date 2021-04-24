@@ -116,11 +116,11 @@ app.get("/List-of-users" , function(req,res)
 
 app.get("/register" , function(req,res)
 {
-  res.render("login/register")
+  res.render("registration/registration")
 })
 
 app.get("/register", function(req, res){
-  res.render("login/register");
+  res.render("registration/registration");
 });
 
 app.get("/secrets", function(req, res){
