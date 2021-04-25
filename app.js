@@ -240,8 +240,6 @@ app.post("/register", function(req, res){
 
 app.post("/AskAQues", (req, res)=>{
 
-  console.log("@@@@@@@@@@@@@@@@@@@@@@@");
-
   var today = new Date();
   var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
   var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
@@ -367,7 +365,21 @@ app.get('/placement',(req,res)=>{
 });
 
 app.get("/forum", (req, res)=>{
-  res.render("forum/forum");
+
+  let data;
+
+  Forum
+  .find()
+  .then(doc => {
+    console.log("$$$$$$$$$$$$");
+    data=doc
+    res.render("forum/forum" , {body: data});
+    console.log(doc)
+  })
+  .catch(err => {
+    console.error(err)
+  })
+
 });
 
 app.get('/registration',(req,res)=>{
