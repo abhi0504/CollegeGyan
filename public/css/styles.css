@@ -1197,6 +1197,15 @@ body{
 }
 
 /*-----forum css-------*/
+.form-control-borderless {
+  border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
 .feed-heading{
   font-size: 3rem;
   padding: 2rem 0;

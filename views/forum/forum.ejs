@@ -1,34 +1,28 @@
 <%- include('../partials/header') %>
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-<div class="container-fluid">
-<a class="navbar-brand" href="#">DTU Forum</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarNav">
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">Ask a question</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/internship">Internship Stats</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Placement Stats</a>
-    </li>
-  </ul>
-</div>
-</div>
-</nav>
 
-<nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <form class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
+
+
+<div class="row justify-content-center" style="width: 100%;">
+  <div class="col-12 col-md-10 col-lg-8">
+      <form class="card card-sm">
+          <div class="card-body row no-gutters align-items-center">
+              <div class="col-auto">
+                <i class="fas fa-search h4 text-body"></i>
+              </div>
+              <!--end of col-->
+              <div class="col">
+                  <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search your query">
+              </div>
+              <!--end of col-->
+              <div class="col-auto">
+                  <button class="btn btn-lg btn-primary" type="submit">Search</button>
+              </div>
+              <!--end of col-->
+          </div>
+      </form>
   </div>
-</nav>
+  <!--end of col-->
+</div>
 
 <div class="forum">
   <h2 class="feed-heading">Your Feed</h2>
@@ -92,49 +86,56 @@
       </div>
     </div>
     <div class="answer-post">
-      <p class="answer">I. ELECTIVE GYAAN
-        Been on the fence for the past two days, bugging seniors and trying to decide electives? You might be quite confused after seeing the long list and probably excited about a few fancy names. Don’t worry, we bring to you curated Gyaan from the best to help you figure it all out! As a first rule, remember, this is DTU so DO NOT get attracted to interesting sounding subjects.
-        1. A few rules to keep in mind before you start:
-        You can take any course from any department but a cross-department course would have limited seats and they fill up fast in some cases so keep backups, at least one from your department as a general rule. You cannot take a course of a combination of A+B and B+C, even if you’re taking A and C as your choices, basically no overlapping of slots is allowed.
-      </p>  
-      <p class="answer">
-        2. What you should actually consider while choosing a subject:
-        Availability of content: whether there are youtube video tutorials/previous year notes and papers?Teacher: lenient or strict? Difficulty: easy or difficult? Slot : 8-10 or 2-4? A/B is 8-10 C/D is 2-4
-      </p>
-      <p class="answer">
-        3. Beginning with OEC courses:
-        Econometrics : Very scoring + easy + chill department. Highly recommend! But fills up extremely fast.
-        SCM: Easy + scoring + theory (basically you’ll have to write a lot). Can be kept as a backup.
-        International Trade: Not offered in previous years but HU is a chill department so might be easy.
-        DBMS/OS: Recommended for non-coding branches as extremely relevant for placements. (MCE students can't take since DBMS is a core subject next sem).
-        Occupational health: Completely theoretical subject. Extremely scoring. Hence a good option to those who don't mind writing long exams. Chill dept.
-        It is highly recommended to not take ECE/EE electives. These are mostly tough and subjects like DIP/ Computer Vision sound interesting but require a lot of preliminary knowledge.
-      </p>
-      <p class="answer">
-        4. Moving on to GEC Courses:
-        MOOC: Highly recommended, A+ with minimum effort. Take coursera if you want a guaranteed A+.
-        Taking NPTEL might be a gamble especially with real assignments and actual exams but possible to get an O here (DYOR for the subjects). You can only take MOOC twice. Generally recommended to use it in 5th and 7th sem, 6th sem is longer and not that intensive for internships/placements.
-        Computer Graphics: Recommended, quite chill, scoring
-        Malware Analysis: Few classes, chill department, erratic checking
-        Machine Learning/ Pattern Recognition: Take if you’re interested in the subject or already know a bit about it and have a decent GPA.
-        Operations Research (MCE): Last year paper was super easy, direct examples from the book. Subject is interesting as well.
-        OOP: There were no classes last year. So only take if you know the subject. While the paper was easy, the marking was very absurd last year.
-      </p>
-      <p class="answer">
-        5. Recommended combinations:
-          For COE/IT/SE : Econ/Occupational + CG/Malware + Mooc or Econ/Occupational + PR/ML +Mooc (if you’re super into ML and already have a good cgpa)
-          For MCE: (We recommend keeping one mooc for 7th sem, as not many good choices are available) Econ/Occupational + OOP/OR + Mooc
-          For non-coding branches with interest for coding ECE/EE/EP: DBMS/OS + CN/OOP + Mooc
-          For people aiming for just marks: Econ/Occupational ++ Mooc
-          In case you want to save Mooc for later sems, you can try taking up a research project but try to know your mentors beforehand. Since it is being introduced for the first time, no one can say how the marking would be.
-          For those saving up on Moocs and not taking up research/project:Econ + CG/Malware + OR/ML/PR
-          Also, SE students should definitely take up TOC because that will be a prerequisite for your core course later. MC students tend to take up their own subjects which might make sense because OR will be easy for you and OOP is a core CS subject you shouldn’t miss
-          For further doubts, post in the comments and some gyaani senior will definitely respond!
-          Also, leave in the comments below the next topic you’d like to see in the ‘solid Gyaan’ series by CLIMB!
-      </p>
+      <div class="expandable">
+        <p class="answer">I. ELECTIVE GYAAN
+          Been on the fence for the past two days, bugging seniors and trying to decide electives? You might be quite confused after seeing the long list and probably excited about a few fancy names. Don’t worry, we bring to you curated Gyaan from the best to help you figure it all out! As a first rule, remember, this is DTU so DO NOT get attracted to interesting sounding subjects.
+          1. A few rules to keep in mind before you start:
+          You can take any course from any department but a cross-department course would have limited seats and they fill up fast in some cases so keep backups, at least one from your department as a general rule. You cannot take a course of a combination of A+B and B+C, even if you’re taking A and C as your choices, basically no overlapping of slots is allowed.
+            
+          2. What you should actually consider while choosing a subject:
+          Availability of content: whether there are youtube video tutorials/previous year notes and papers?Teacher: lenient or strict? Difficulty: easy or difficult? Slot : 8-10 or 2-4? A/B is 8-10 C/D is 2-4
+        
+        
+          3. Beginning with OEC courses:
+          Econometrics : Very scoring + easy + chill department. Highly recommend! But fills up extremely fast.
+          SCM: Easy + scoring + theory (basically you’ll have to write a lot). Can be kept as a backup.
+          International Trade: Not offered in previous years but HU is a chill department so might be easy.
+          DBMS/OS: Recommended for non-coding branches as extremely relevant for placements. (MCE students can't take since DBMS is a core subject next sem).
+          Occupational health: Completely theoretical subject. Extremely scoring. Hence a good option to those who don't mind writing long exams. Chill dept.
+          It is highly recommended to not take ECE/EE electives. These are mostly tough and subjects like DIP/ Computer Vision sound interesting but require a lot of preliminary knowledge.
+        
+        
+          4. Moving on to GEC Courses:
+          MOOC: Highly recommended, A+ with minimum effort. Take coursera if you want a guaranteed A+.
+          Taking NPTEL might be a gamble especially with real assignments and actual exams but possible to get an O here (DYOR for the subjects). You can only take MOOC twice. Generally recommended to use it in 5th and 7th sem, 6th sem is longer and not that intensive for internships/placements.
+          Computer Graphics: Recommended, quite chill, scoring
+          Malware Analysis: Few classes, chill department, erratic checking
+          Machine Learning/ Pattern Recognition: Take if you’re interested in the subject or already know a bit about it and have a decent GPA.
+          Operations Research (MCE): Last year paper was super easy, direct examples from the book. Subject is interesting as well.
+          OOP: There were no classes last year. So only take if you know the subject. While the paper was easy, the marking was very absurd last year.
+        
+        
+          5. Recommended combinations:
+            For COE/IT/SE : Econ/Occupational + CG/Malware + Mooc or Econ/Occupational + PR/ML +Mooc (if you’re super into ML and already have a good cgpa)
+            For MCE: (We recommend keeping one mooc for 7th sem, as not many good choices are available) Econ/Occupational + OOP/OR + Mooc
+            For non-coding branches with interest for coding ECE/EE/EP: DBMS/OS + CN/OOP + Mooc
+            For people aiming for just marks: Econ/Occupational ++ Mooc
+            In case you want to save Mooc for later sems, you can try taking up a research project but try to know your mentors beforehand. Since it is being introduced for the first time, no one can say how the marking would be.
+            For those saving up on Moocs and not taking up research/project:Econ + CG/Malware + OR/ML/PR
+            Also, SE students should definitely take up TOC because that will be a prerequisite for your core course later. MC students tend to take up their own subjects which might make sense because OR will be easy for you and OOP is a core CS subject you shouldn’t miss
+            For further doubts, post in the comments and some gyaani senior will definitely respond!
+            Also, leave in the comments below the next topic you’d like to see in the ‘solid Gyaan’ series by CLIMB!
+        </p>
+      </div>
     </div>   
   </div>
   </div>
 </div>
+
+<script src="js/jQuery.js"></script>
+
+<script src="js/jquery.expander.js"></script>
+
+<script src="js/forum.js"></script>
 
 <%- include('../partials/footer') %>
