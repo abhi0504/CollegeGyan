@@ -1,7 +1,7 @@
 <%- include('../partials/header') %>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
-<form class="form-horizontal" role="form" action="/AskAQues" method="POST">
+<!-- <form class="form-horizontal" role="form" action="/AskAQues" method="POST">
     <div class="form-group">
         <label class="col-sm-1 control-label">Topic</label>
         <div class="col-sm-11">
@@ -26,7 +26,30 @@
         <button type="submit" class="btn btn-danger">Discard</button>
     </div>
   
+</form> -->
+<h2 class="aaq-heading">Have a question? <br> Ask away and we will try our best to help you.</h2>
+<form class="question-form">
+  <!-- Name input -->
+  <div class="form-outline mb-4">
+    <label class="form-label">Topic</label>
+    <input type="text" id="to" name="topic" class="form-control" required/>
+  </div>
+
+  <!-- Email input -->
+  <div class="form-outline mb-4">
+    <label class="form-label">Add Labels</label>
+    <input type="text" id="cc" name="labels" class="form-control" required/>   
+  </div>
+
+  <!-- Message input -->
+  <div class="form-outline mb-4">
+    <label class="form-label">Message</label>
+    <textarea class="form-control" id="message" name="body" rows="4" placeholder="Describe your question" required></textarea> 
+  </div>
+
+
+  <!-- Submit button -->
+  <button type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
 </form>
-    
 
 <%- include('../partials/footer') %>
