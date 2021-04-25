@@ -45,6 +45,17 @@ const forumSchema = new mongoose.Schema ({
   downvotes: Number
 });
 
+const ansSchema = new mongoose.Schema ({
+  name : String,
+  description : String,
+  current : String,
+  time: String,
+  body: String,
+  upvotes: Number,
+  downvotes: Number,
+  quesId: String
+});
+
 const userSchema = new mongoose.Schema ({
   email: String,
   password: String,
@@ -62,6 +73,7 @@ forumSchema.plugin(findOrCreate);
 
 const User = new mongoose.model("User", userSchema);
 const Forum = new mongoose.model("Forum", forumSchema);
+const Ans = new mongoose.model("Ans" , ansSchema);
 
 
 passport.use(User.createStrategy());
@@ -267,6 +279,35 @@ app.post("/AskAQues", (req, res)=>{
   console.log(req);
 });
 
+app.post('/answer/:quesId',(req,res)=>{
+
+  var today = new Date();
+  var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+  var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  var dateTime = date+' '+time;
+
+  let ans = new Ans({
+    description: req.user.description,
+    current: req.user.current,
+    name:req.user.name ,
+    time: dateTime,
+    body: req.body.body,
+    upvotes: 0,
+    downvotes: 0,
+    quesId: req.params.quesId
+  })
+  ans.save()
+   .then(doc => {
+     console.log(doc)
+   })
+   .catch(err => {
+     console.error(err)
+   })
+
+
+  res.redirect('/forum');
+});
+
 app.post("/login", function(req, res){
   var today = new Date();
   var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
@@ -384,6 +425,22 @@ app.get("/forum", (req, res)=>{
 
 app.get('/registration',(req,res)=>{
   res.render('registration/registration');
+});
+
+app.get('/answer/:quesId',(req,res)=>{
+
+  Ans
+  .find({
+    quesId:  req.params.quesId // search query
+  })
+  .then(doc => {
+    console.log("&*&**&*&*&*&*&*&*&*&*&*&*&*&*&*&*&");
+    console.log(doc)
+    res.render('forum/answer' , {link: req.params.quesId , body: doc});
+  })
+  .catch(err => {
+    console.error(err)
+  })
 });
 
 app.listen(port, function() {

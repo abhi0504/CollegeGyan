@@ -1,0 +1,100 @@
+<%- include('../partials/header') %>
+
+
+<div style="width: 60%;
+margin: 4rem auto;
+padding: 2rem;
+outline: 8px solid royalblue;">
+    <h2 style="font-weight: 600;
+    padding-bottom: 2rem;">Which DEC/GEC subjects should we choose? </h2>   
+    <i class="user-pic fa fa-user-circle fa-2x"></i>
+    <div class="feed-row-1">
+      <div style="font-weight: 400;" class="user-info">
+        <p>Srijan jha</p>
+        <p>Third Year BTech student (ECE)</p>
+      </div> 
+    </div>
+    <div class="answer-post">
+      <div class="expandable">
+        <p style="font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 1.8;
+        color: #4e5863;" class="answer">I. ELECTIVE GYAAN
+          Been on the fence for the past two days, bugging seniors and trying to decide electives? You might be quite confused after seeing the long list and probably excited about a few fancy names. Don’t worry, we bring to you curated Gyaan from the best to help you figure it all out! As a first rule, remember, this is DTU so DO NOT get attracted to interesting sounding subjects.
+          1. A few rules to keep in mind before you start:
+          You can take any course from any department but a cross-department course would have limited seats and they fill up fast in some cases so keep backups, at least one from your department as a general rule. You cannot take a course of a combination of A+B and B+C, even if you’re taking A and C as your choices, basically no overlapping of slots is allowed.
+            
+        </p>
+      </div>
+    </div>   
+  </div>
+  </div>
+</div>
+
+<div style="margin-left: 20%;">
+   <h2 class="question" >ANSWERS </h2>   
+</div>
+
+
+
+<%  for(var i = 0 ; i < body.length ; i++) { %>
+
+
+
+<div style="width: 60%;
+margin: 4rem auto;
+padding: 2rem;
+outline: 8px solid royalblue;">
+    <i class="user-pic fa fa-user-circle fa-2x"></i>
+    <div class="feed-row-1">
+      <div style="font-weight: 400;" class="user-info">
+        <p><%= body[i].name %></p>
+        <p><%= body[i].current %> , <%= body[i].description %></p>
+      </div> 
+      <div class="thumbs">
+        <i style="padding:0 0.5rem; color: #00FF00;" class="thumbs-up fas fa-thumbs-up fa-2x"></i>
+        <i style="padding:0 0.5rem; color: red;" class="thumbs-down fas fa-thumbs-down fa-2x"></i>
+      </div>
+    </div>
+    <div class="answer-post">
+      <div class="expandable">
+        <p class="answer">
+            <p class="answer"><%= body[i].body %>
+        </p>
+      </div>
+    </div>   
+  </div>
+  </div>
+</div>
+
+
+
+<%  } %>
+
+
+
+
+
+<% var ch = "/answer/" + link  %>
+
+<div style="width: 60%;
+margin: 4rem auto;
+padding: 2rem;">
+<form action= <%= ch %>  method="POST">
+    <textarea class="form-control" id="message" name="body" rows="12" placeholder="Answer this Question"></textarea>
+    <div style="margin: 20px;">	
+        <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+</form>
+</div>
+
+
+<script src="js/jQuery.js"></script>
+
+<script src="js/jquery.expander.js"></script>
+
+<script src="js/forum.js"></script>
+
+    
+
+<%- include('../partials/footer') %>

@@ -30,18 +30,18 @@
 
   <%  for(var i = 0 ; i < body.length ; i++) { %>
 
-  <div class="feed-content">
+    <% var ch = "answer/" + body[i]._id  %>
+
+    <div class="feed-content">
+    <a href= <%= ch %>  >
     <h2 class="question"><%= body[i].topic %> </h2>   
+  </a>
     <i class="user-pic fa fa-user-circle fa-2x"></i>
     <div class="feed-row-1">
       <div class="user-info">
         <p><%= body[i].name %></p>
         <p><%= body[i].current %> , <%= body[i].description %></p>
       </div> 
-      <div class="thumbs">
-        <i class="thumbs-up fas fa-thumbs-up fa-2x"></i>
-        <i class="thumbs-down fas fa-thumbs-down fa-2x"></i>
-      </div>
     </div>
     <div class="answer-post">
       <p class="answer"><%= body[i].body %>
