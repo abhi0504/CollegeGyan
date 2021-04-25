@@ -30,8 +30,20 @@ let email = ""
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb+srv://abhishek_0504:9971749520a@cluster0-b6e9z.mongodb.net/userDB", {useNewUrlParser: true ,useFindAndModify: false , useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://abhishek_0504:9971749520a@cluster0-b6e9z.mongodb.net/HelloWorldDB", {useNewUrlParser: true ,useFindAndModify: false , useUnifiedTopology: true});
 mongoose.set("useCreateIndex", true);
+
+const forumSchema = new mongoose.Schema ({
+  name : String,
+  description : String,
+  current : String,
+  time: String,
+  topic: String,
+  labels: Array,
+  body: String,
+  upvotes: Number,
+  downvotes: Number
+});
 
 const userSchema = new mongoose.Schema ({
   email: String,
@@ -39,13 +51,18 @@ const userSchema = new mongoose.Schema ({
   googleId: String,
   lastLogin : String,
   name : String,
-  permission : Boolean
+  number : String,
+  description : String,
+  current : String
 });
 
 userSchema.plugin(passportLocalMongoose);
 userSchema.plugin(findOrCreate);
+forumSchema.plugin(findOrCreate);
 
 const User = new mongoose.model("User", userSchema);
+const Forum = new mongoose.model("Forum", forumSchema);
+
 
 passport.use(User.createStrategy());
 
@@ -116,14 +133,16 @@ app.get("/List-of-users" , function(req,res)
 
 app.get("/register" , function(req,res)
 {
-  res.render("login/register")
+  res.render("registration/registration")
 })
 
 app.get("/register", function(req, res){
-  res.render("login/register");
+  res.render("registration/registration");
 });
 
 app.get("/secrets", function(req, res){
+  console.log(':::::::::::::::::::::');
+  console.log(req);
   User.find({username:email}, function(err, foundUsers){
     if (err){
       console.log(err);
@@ -199,7 +218,14 @@ app.post("/register", function(req, res){
   var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
   var dateTime = date+' '+time;
 
-  User.register({username: req.body.username , lastLogin : dateTime , name:req.body.name , permission: true}, req.body.password, function(err, user){
+  User.register({
+    username: req.body.username , 
+    number: req.body.contact,
+    description: req.body.description,
+    current: req.body.occupation,
+    lastLogin : dateTime , 
+    name:req.body.name 
+  }, req.body.password, function(err, user){
     if (err) {
       console.log(err);
       res.redirect("/register");
@@ -210,6 +236,37 @@ app.post("/register", function(req, res){
     }
   });
 
+});
+
+app.post("/AskAQues", (req, res)=>{
+
+  console.log("@@@@@@@@@@@@@@@@@@@@@@@");
+
+  var today = new Date();
+  var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+  var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  var dateTime = date+' '+time;
+
+  let ques = new Forum({
+    description: req.user.description,
+    current: req.user.current,
+    name:req.user.name ,
+    time: dateTime,
+    topic: req.body.topic,
+    labels: req.body.labels,
+    body: req.body.body,
+    upvotes: 0,
+    downvotes: 0
+  })
+  ques.save()
+   .then(doc => {
+     console.log(doc)
+   })
+   .catch(err => {
+     console.error(err)
+   })
+
+  console.log(req);
 });
 
 app.post("/login", function(req, res){
@@ -263,8 +320,6 @@ User.find({username:req.body.username} , function(err , founduser)
           {
             passport.authenticate("local")(req, res, function(){
 
-
-
               if(req.body.username === "admin@123.com")
               {
                 res.redirect("/admin")
@@ -299,6 +354,7 @@ app.get("/institute", (req, res)=>{
 });
 
 app.get("/AskAQues", (req, res)=>{
+  console.log(req);
   res.render("forum/askaques");
 });
 
