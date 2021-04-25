@@ -1,5 +1,6 @@
 require('dotenv').config();
 const express = require("express");
+var ObjectId = require('mongodb').ObjectID;
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
@@ -429,6 +430,21 @@ app.get('/registration',(req,res)=>{
 
 app.get('/answer/:quesId',(req,res)=>{
 
+  let ques ;
+
+  Forum
+  .find({
+    _id: new ObjectId(req.params.quesId)
+  })
+  .then(doc => {
+    console.log("$$$$$$$$$$$$");
+    console.log(doc);
+    ques = doc;
+  })
+  .catch(err => {
+    console.error(err)
+  })
+
   Ans
   .find({
     quesId:  req.params.quesId // search query
@@ -436,7 +452,7 @@ app.get('/answer/:quesId',(req,res)=>{
   .then(doc => {
     console.log("&*&**&*&*&*&*&*&*&*&*&*&*&*&*&*&*&");
     console.log(doc)
-    res.render('forum/answer' , {link: req.params.quesId , body: doc});
+    res.render('forum/answer' , {link: req.params.quesId , body: doc , qbody: ques});
   })
   .catch(err => {
     console.error(err)
