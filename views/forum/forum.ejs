@@ -25,14 +25,18 @@
 </div>
 
 <div class="forum">
+
   <h2 class="feed-heading">Your Feed</h2>
+
+  <%  for(var i = 0 ; i < body.length ; i++) { %>
+
   <div class="feed-content">
-    <h2 class="question">How much CGPA is considered good? </h2>   
+    <h2 class="question"><%= body[i].topic %> </h2>   
     <i class="user-pic fa fa-user-circle fa-2x"></i>
     <div class="feed-row-1">
       <div class="user-info">
-        <p>Vidit Aggarwal</p>
-        <p>Final Year BTech student (EP)</p>
+        <p><%= body[i].name %></p>
+        <p><%= body[i].current %> , <%= body[i].description %></p>
       </div> 
       <div class="thumbs">
         <i class="thumbs-up fas fa-thumbs-up fa-2x"></i>
@@ -40,37 +44,16 @@
       </div>
     </div>
     <div class="answer-post">
-      <p class="answer">The higher the better! Don't believe in myths like cgpa is not important.
-        It plays an crucial role in placemnets and internships while CV shortlisting.
+      <p class="answer"><%= body[i].body %>
       </p>  
     </div>    
   </div>
-     
-        
-  <hr class="dotted-hr">            
-      
-  <div class="feed-content">
-    <h2 class="question">Should we join college societies?</h2>   
-    <i class="user-pic fa fa-user-circle fa-2x"></i>
-    <div class="feed-row-1">
-      <div class="user-info">
-        <p>Sujata Sharma</p>
-        <p>Final Year BTech student (COE)</p>
-      </div> 
-      <div class="thumbs">
-        <i class="thumbs-up fas fa-thumbs-up fa-2x"></i>
-        <i class="thumbs-down fas fa-thumbs-down fa-2x"></i>
-      </div>
-    </div>
-    <div class="answer-post">
-      <p class="answer">In first year explore as much societies as you can according to your interest. University events
-        and activities plays important role in personality development and enhance various other skills.
-        Manage your time between societies and academics.
-      </p>  
-    </div>   
+  <div style="margin-bottom: 80px;">
+    <hr class="dotted-hr">            
   </div>
 
-  <hr class="dotted-hr">
+<%  } %>
+
 
   <div class="feed-content">
     <h2 class="question">Which DEC/GEC subjects should we choose? </h2>   
@@ -139,3 +122,4 @@
 <script src="js/forum.js"></script>
 
 <%- include('../partials/footer') %>
+  
