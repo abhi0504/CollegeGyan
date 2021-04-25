@@ -882,9 +882,14 @@
 
 
 /* Home Section  */
+
+body{
+  background-color:  #F4EDED!important;
+}
 .main-title{
   font-size: 2.8rem;
   padding: 0 0 1.5rem;
+  color: #3772FF;
 }
 .row-1{
   display: flex;
@@ -901,7 +906,7 @@
   width: 88%;
   font-size: 1.4rem;
   line-height: 1.7;
-  color: #4e5863;
+  color: #6c757d;
 }
 
 .image-block{
@@ -909,13 +914,13 @@
 }
 
 .image-block img{
-  width: 40%;
+  width: 45%;
   transition: all 0.3s ease-in-out;
 }
 
 .image-block img:hover{
   scale: 1.2;
-  outline: solid 8px royalblue;
+  outline: solid 8px #1DD3B0;
   outline-offset: 10px;
 }
 
@@ -985,7 +990,13 @@
   margin-top: 2rem;
 }
 
+.internship-btn, .placement-btn{
+  margin: 2rem auto !important;
+}
 
+.internship-btn{
+  margin-left: 4rem !important;
+}
 /* Internship-Section */
 *{
   margin: 0;
@@ -1023,7 +1034,7 @@
 .dotted-hr{
   margin: 3rem auto 0;
   border:none;
-  border-top:12px dotted #f00;
+  border-top:13px dotted #1D201F;
   color:#fff;
   height:1px;
   width:20%;
