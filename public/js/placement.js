@@ -4,10 +4,10 @@ window.onload = function(){
     window.myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            labels: ['2014', '2015', '2016', '2017', '2018', '2019'],
             datasets: [{
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
+                 label: 'No. of offers with CTC > 20LPA',
+                data: [54, 33, 64, 66, 83, 114],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -41,28 +41,28 @@ window.onload = function(){
         }
     });
 
-    var ctx2 = document.getElementById('pieChart').getContext('2d');
-    window.myPieChart = new Chart(ctx2,{
-        type: 'pie',
-        data: {
-            datasets: [{
-                data: [10, 20, 30]
-            }],
-            backgroundColor: [
-                'rgb(255, 99, 132)',
-                'rgb(54, 162, 235)',
-                'rgb(255, 205, 86)'
-              ],
-            // These labels appear in the legend and in the tooltips when hovering different arcs
-            labels: [
-                'Red',
-                'Yellow',
-                'Blue'
-            ]
-        },
-        options:{
-            responsive: true,
-            maintainAspectRatio: false
-        }
-    });
+    // var ctx2 = document.getElementById('pieChart').getContext('2d');
+    // window.myPieChart = new Chart(ctx2,{
+    //     type: 'pie',
+    //     data: {
+    //         datasets: [{
+    //             data: [10, 20, 30]
+    //         }],
+    //         backgroundColor: [
+    //             'rgb(255, 99, 132)',
+    //             'rgb(54, 162, 235)',
+    //             'rgb(255, 205, 86)'
+    //           ],
+    //         // These labels appear in the legend and in the tooltips when hovering different arcs
+    //         labels: [
+    //             'Red',
+    //             'Yellow',
+    //             'Blue'
+    //         ]
+    //     },
+    //     options:{
+    //         responsive: true,
+    //         maintainAspectRatio: false
+    //     }
+    // });
 }
