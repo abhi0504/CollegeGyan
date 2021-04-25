@@ -366,7 +366,7 @@ User.find({username:req.body.username} , function(err , founduser)
               }
               else
               {
-                res.redirect("/secrets");
+                res.redirect("/forum");
               }
             });
           }
