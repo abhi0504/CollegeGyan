@@ -33,9 +33,36 @@ outline: 8px solid royalblue;">
 </div>
 
 <div style="margin-left: 20%;">
-   <h2 class="question" >ANSWERS </h2>   
+   <h2 class="question" >ANSWERS :</h2>   
 </div>
 
+
+<% if(prop) { %>
+
+    <% var ch = "/answer/" + link  %>
+    
+    
+    <div style="width: 60%;
+    margin: 4rem auto;
+    padding: 2rem;">
+    <form action= <%= ch %>  method="POST">
+        <textarea class="form-control" id="message" name="body" rows="12" placeholder="Answer this Question"></textarea>
+        <div style="margin: 20px;">	
+            <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+    </form>
+    </div>
+    
+    <% } %>
+    
+    
+    <% if(!prop) { %>
+    
+        <div style="position: relative; left: 30%; margin-bottom: 100px; margin-top: 100px;">
+            <h2 class="question" style="color: red;" >Please Login First to Answer </h2>   
+         </div>
+    
+        <% } %>
 
 
 <%  for(var i = 0 ; i < body.length ; i++) { %>
@@ -81,18 +108,6 @@ outline: 8px solid royalblue;">
 
 
 
-<% var ch = "/answer/" + link  %>
-
-<div style="width: 60%;
-margin: 4rem auto;
-padding: 2rem;">
-<form action= <%= ch %>  method="POST">
-    <textarea class="form-control" id="message" name="body" rows="12" placeholder="Answer this Question"></textarea>
-    <div style="margin: 20px;">	
-        <button type="submit" class="btn btn-success">Submit</button>
-    </div>
-</form>
-</div>
 
 
 <script src="js/jQuery.js"></script>

@@ -294,26 +294,36 @@ app.post('/answer/:quesId',(req,res)=>{
   var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
   var dateTime = date+' '+time;
 
-  let ans = new Ans({
-    description: req.user.description,
-    current: req.user.current,
-    name:req.user.name ,
-    time: dateTime,
-    body: req.body.body,
-    upvotes: 0,
-    downvotes: 0,
-    quesId: req.params.quesId
-  })
-  ans.save()
-   .then(doc => {
-     console.log(doc)
-   })
-   .catch(err => {
-     console.error(err)
-   })
+  if(req.user)
+  {
+    let ans = new Ans({
+      description: req.user.description,
+      current: req.user.current,
+      name:req.user.name ,
+      time: dateTime,
+      body: req.body.body,
+      upvotes: 0,
+      downvotes: 0,
+      quesId: req.params.quesId
+    })
+    ans.save()
+     .then(doc => {
+       console.log(doc)
+     })
+     .catch(err => {
+       console.error(err)
+     })
+  
+  
+    res.redirect('/forum');
+  }
 
+  else
+  {
+    res.redirect('/forum');
+  }
 
-  res.redirect('/forum');
+  
 });
 
 app.post("/login", function(req, res){
@@ -439,6 +449,13 @@ app.get('/answer/:quesId',(req,res)=>{
 
   let ques ;
 
+  let check = false;
+
+  if(req.user)
+  {
+    check = true;
+  }
+
   Forum
   .find({
     _id: new ObjectId(req.params.quesId)
@@ -455,7 +472,7 @@ app.get('/answer/:quesId',(req,res)=>{
   .then(doc => {
     console.log("&*&**&*&*&*&*&*&*&*&*&*&*&*&*&*&*&");
     console.log(ques);
-    res.render('forum/answer' , {link: req.params.quesId , body: doc , qbody: ques});
+    res.render('forum/answer' , {link: req.params.quesId , body: doc , qbody: ques , prop: check});
   })
   .catch(err => {
     console.error(err)
