@@ -1,4 +1,106 @@
-<%- include('../partials/header') %>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>CollegeGyaan</title>
+  <link rel="stylesheet" href="../../public/css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="css/bootstrap-btn.css"> -->
+</head>
+
+<body>
+
+  <nav style="font-size: 1.2rem; padding:1rem 2rem"class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/home"><img style="width: 40%;"alt="CollegeGyaan"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav nav" id="activeContainer">
+        <li class="nav-item">
+          <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/forum">Forum</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/internship">Internship Stats</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/placement">Placement Stats</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/askaques">Ask a question</a>
+        </li>
+        <li class="nav-item" style="margin-left: 5rem;">
+          <a class="nav-link active" aria-current="page" href="/login">
+            <button type="submit" class="btn btn-outline-primary">Login/Register</button>
+          </a>
+        </li>
+        <!-- <li class="nav-item" >
+          <a class="nav-link" href="#">
+            <div style="margin-left: 52rem;">
+              <i class="fa fa-rss" style="font-size:40px;color:white"></i>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <div style="margin-left:2rem;">
+              <i class="fa fa-plus" style="font-size:40px;color:white"></i>
+            </div>
+          </a>
+        </li> -->
+      </ul>
+    </div>
+  </nav>
+<!--
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/home">
+        CollegeGyaan
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+                Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <div style="margin-left: 60px;">
+                <i class="fa fa-user-o" style="font-size:40px;color:white"></i>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link" href="forum">
+              <div style="margin-left: 60px;">
+                <i class="fa fa-rss" style="font-size:40px;color:white"></i>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="AskAQues">
+              <div style="margin-left: 60px;">
+                <i class="fa fa-plus" style="font-size:40px;color:white"></i>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav> -->
+
 
 <% console.log("&*&**&*&*&*&*&*&*&*&*&*&*&*&*&*&*&"); console.log("&*&**&*&*&*&*&*&*&*&*&*&*&*&*&*&*&");  console.log("1221"); console.log(qbody); %>
 
@@ -118,4 +220,90 @@ outline: 8px solid royalblue;">
 
     
 
-<%- include('../partials/footer') %>
+<!-- script for adding active class -->
+<script src="js/active.js"></script>
+  <!-- Footer -->
+<footer style="	text-align: center;
+width: 100%;
+background-color: #292b2c ;
+font-size: 1.2rem;
+color: #fff;"class="page-footer footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h3>CollegeGyan</h3>
+        <p style="width: 60%;">Your one-stop platform for faster, clearer and clutter free access to all the gyaan required during college life</p>
+
+      </div>  
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Forum</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="/forum">Visit Forum</a>
+          </li>
+          <li>
+            <a href="/register">Register</a>
+          </li>
+          <li>
+            <a href="/login">Sign In</a>
+          </li>
+          <li>
+            <a href="/askAQues">Ask a question</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Statistics</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="/internship">Internship</a>
+          </li>
+          <li>
+            <a href="/placement">Placement</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a>Hello World</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+</body>
+</html>
+
