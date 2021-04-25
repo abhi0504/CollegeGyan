@@ -1340,18 +1340,4 @@ body{
   width: 100%;
   overflow: hidden;
 }
-<<<<<<< HEAD
-=======
 
-/* Ask a Question  */
-.aaq-heading{
-  text-align: center;
-  color:rebeccapurple ;
-  padding: 3rem 0 0rem;
-}
-.question-form{
-  width: 40%;
-  margin: 0 auto;
-  padding: 1rem;
-}
->>>>>>> 948b016295c270f5b663cf5c462325053916625f
