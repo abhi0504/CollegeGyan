@@ -990,7 +990,13 @@ body{
   margin-top: 2rem;
 }
 
+.internship-btn, .placement-btn{
+  margin: 2rem auto !important;
+}
 
+.internship-btn{
+  margin-left: 4rem !important;
+}
 /* Internship-Section */
 *{
   margin: 0;
