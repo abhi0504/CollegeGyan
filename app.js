@@ -30,7 +30,7 @@ let email = ""
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb+srv://abhishek_0504:9971749520a@cluster0-b6e9z.mongodb.net/userDB", {useNewUrlParser: true ,useFindAndModify: false , useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://abhishek_0504:9971749520a@cluster0-b6e9z.mongodb.net/HelloWorldDB", {useNewUrlParser: true ,useFindAndModify: false , useUnifiedTopology: true});
 mongoose.set("useCreateIndex", true);
 
 const userSchema = new mongoose.Schema ({
@@ -39,7 +39,9 @@ const userSchema = new mongoose.Schema ({
   googleId: String,
   lastLogin : String,
   name : String,
-  permission : Boolean
+  number : String,
+  description : String,
+  current : String
 });
 
 userSchema.plugin(passportLocalMongoose);
@@ -199,7 +201,14 @@ app.post("/register", function(req, res){
   var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
   var dateTime = date+' '+time;
 
-  User.register({username: req.body.username , lastLogin : dateTime , name:req.body.name , permission: true}, req.body.password, function(err, user){
+  User.register({
+    username: req.body.username , 
+    number: req.body.contact,
+    description: req.body.description,
+    current: req.body.occupation,
+    lastLogin : dateTime , 
+    name:req.body.name 
+  }, req.body.password, function(err, user){
     if (err) {
       console.log(err);
       res.redirect("/register");
@@ -262,8 +271,6 @@ User.find({username:req.body.username} , function(err , founduser)
           else
           {
             passport.authenticate("local")(req, res, function(){
-
-
 
               if(req.body.username === "admin@123.com")
               {
