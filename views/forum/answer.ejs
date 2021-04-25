@@ -1,12 +1,17 @@
 <%- include('../partials/header') %>
 
+<% console.log("&*&**&*&*&*&*&*&*&*&*&*&*&*&*&*&*&"); console.log("&*&**&*&*&*&*&*&*&*&*&*&*&*&*&*&*&");  console.log("1221"); console.log(qbody); %>
 
 <div style="width: 60%;
 margin: 4rem auto;
 padding: 2rem;
 outline: 8px solid royalblue;">
     <h2 style="font-weight: 600;
-    padding-bottom: 2rem;"><%= qbody[0].topic %> </h2>   
+    padding-bottom: 2rem;"><%= qbody[0].topic %> </h2> 
+    <div style="position: relative;
+    left: 80%;">
+        <%= qbody[0].time %>
+    </div>  
     <i class="user-pic fa fa-user-circle fa-2x"></i>
     <div class="feed-row-1">
       <div style="font-weight: 400;" class="user-info">
@@ -41,13 +46,18 @@ outline: 8px solid royalblue;">
 margin: 4rem auto;
 padding: 2rem;
 outline: 8px solid royalblue;">
+    <div style="position: relative;
+    left: 80%;">
+        <%= body[1].time %>
+    </div>  
     <i class="user-pic fa fa-user-circle fa-2x"></i>
     <div class="feed-row-1">
       <div style="font-weight: 400;" class="user-info">
         <p><%= body[i].name %></p>
         <p><%= body[i].current %> , <%= body[i].description %></p>
       </div> 
-      <div class="thumbs">
+      <div class="thumbs" style="    left: 80%;
+      position: relative;">
         <i style="padding:0 0.5rem; color: #00FF00;" class="thumbs-up fas fa-thumbs-up fa-2x"></i>
         <i style="padding:0 0.5rem; color: red;" class="thumbs-down fas fa-thumbs-down fa-2x"></i>
       </div>

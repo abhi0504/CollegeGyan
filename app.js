@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use(session({
-  secret: "Our little secret.",
+  secret: "Our little secret.", 
   resave: false,
   saveUninitialized: false
 }));
@@ -271,6 +271,13 @@ app.post("/AskAQues", (req, res)=>{
   })
   ques.save()
    .then(doc => {
+     console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
+     console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
+     console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
+     console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
+     console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
+     console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
+     console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
      console.log(doc)
    })
    .catch(err => {
@@ -440,23 +447,25 @@ app.get('/answer/:quesId',(req,res)=>{
     console.log("$$$$$$$$$$$$");
     console.log(doc);
     ques = doc;
-  })
-  .catch(err => {
-    console.error(err)
-  })
 
-  Ans
+    Ans
   .find({
     quesId:  req.params.quesId // search query
   })
   .then(doc => {
     console.log("&*&**&*&*&*&*&*&*&*&*&*&*&*&*&*&*&");
-    console.log(doc)
+    console.log(ques);
     res.render('forum/answer' , {link: req.params.quesId , body: doc , qbody: ques});
   })
   .catch(err => {
     console.error(err)
   })
+
+  })
+  .catch(err => {
+    console.error(err)
+  })
+
 });
 
 app.listen(port, function() {
