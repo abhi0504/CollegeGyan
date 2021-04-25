@@ -884,18 +884,33 @@
 /* Home Section  */
 
 body{
-  background-color:  #F4EDED!important;
+  padding: 0;
+  margin: 0;
+}
+
+.bg-img{
+  /* background-image: url('../assets/collegestudents.png');
+  /* background-repeat: no-repeat; */
+  /* width: 20rem;
+  height: 60vh; */
+  /* position: absolute;
+  z-index: -10;
+  left: 40vw; */
+  width: 80%;
+
 }
 .main-title{
   font-size: 2.8rem;
-  padding: 0 0 1.5rem;
+  padding: 2rem 0 1.5rem;
   color: #3772FF;
+  
 }
 .row-1{
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  padding:8rem 4rem 4rem;
+  padding:10rem 4rem 4rem;
+  background-color: white;
 }
 
 .text-block{
@@ -914,7 +929,10 @@ body{
 }
 
 .image-block img{
-  width: 45%;
+  position: relative;
+  top: 5rem;
+  left: 3rem;
+  width: 85%;
   transition: all 0.3s ease-in-out;
 }
 
@@ -978,6 +996,8 @@ body{
   justify-content: space-around;
   align-items: flex-start;
   padding:8rem 4rem 8rem;
+  background-color:darkslategrey;
+  color: white;
 }
 
 .row-2 .image-block img{
@@ -988,14 +1008,22 @@ body{
 .forum-cta{
   margin-right: 2rem;
   margin-top: 2rem;
+  font-size: 1.6rem !important;
+  padding: 0.5rem 2rem !important;
 }
 
 .internship-btn, .placement-btn{
   margin: 2rem auto !important;
+  font-size: 1.3rem !important;
 }
 
 .internship-btn{
   margin-left: 4rem !important;
+  display: block;
+}
+
+.stats-img{
+  width: 10%;
 }
 /* Internship-Section */
 *{
@@ -1253,20 +1281,18 @@ body{
 }
 
 /* -----footer-------*/
-.footer-padding {
-	padding-bottom: 60px;
-}
 
 .footer {
 	text-align: center;
-	bottom: 0;
 	width: 100%;
-	height: 60px;
-	background-color: #1abc9c;
-}
-
-.footer p {
-	margin-top: 25px;
-	font-size: 12px;
+	background-color: #292b2c ;
+  font-size: 1.2rem;
   color: #fff;
 }
+
+.footer p{
+  width: 100%;
+  overflow: hidden;
+}
+
+
