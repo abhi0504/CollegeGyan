@@ -1299,6 +1299,12 @@ body{
   color: rgb(85, 79, 79);
 }
 
+.question-form{
+  width: 40%;
+  margin: 0 auto;
+  padding: 1rem 0 3rem;
+}
+
 .user-info p{
   font-weight: 400;
 
@@ -1340,4 +1346,34 @@ body{
   width: 100%;
   overflow: hidden;
 }
+ /* Ask a Question  */
+.aaq-heading{
+  text-align: center;
+  color:rebeccapurple ;
+  padding: 3rem 0 0rem;
+}
+.question-form{
+  width: 40%;
+  margin: 0 auto;
+  padding: 1rem 0 3rem;
+}
+/* Registeration Form  */
+.llb .section-title h2{
+  font-size: 2.5rem;
+  text-align: center;
+  color: #3772FF;
+  padding: 2rem 0 1rem;
+}
 
+.llb .section-title p{
+  font-size: 1.6rem;
+  text-align: center;
+  color: rebeccapurple;
+  padding-bottom: 1rem;
+}
+
+.register-form{
+  margin-bottom: 8rem;
+  outline: 8px solid darkcyan;
+  padding: 2.5rem 8rem;
+}
