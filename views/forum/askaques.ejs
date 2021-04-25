@@ -48,8 +48,18 @@
   </div>
 
 
+  <% if(prop) { %>
   <!-- Submit button -->
   <button type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
 </form>
 
-<%- include('../partials/footer') %>
+<% } %>
+
+<% if(!prop) { %>
+  <div>
+    <h2>Please Login First to Ask any Question</h2>
+  </div>
+
+<% } %>
+
+

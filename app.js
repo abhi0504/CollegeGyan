@@ -411,8 +411,14 @@ app.get("/institute", (req, res)=>{
 });
 
 app.get("/AskAQues", (req, res)=>{
-  console.log(req);
-  res.render("forum/askaques");
+
+  let check = false;
+  if(req.user)
+  {
+    check = true;
+  }
+
+  res.render("forum/askaques" , {prop: check});
 });
 
 app.get('/internship',(req,res)=>{

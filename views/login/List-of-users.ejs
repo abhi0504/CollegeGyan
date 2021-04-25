@@ -34,4 +34,1120 @@
       </div>
     </div
 
-<%- include('../partials/footer') %>
+    <%- include('../partials/header') %>
+    <script type="text/javascript" src="start.js"></script>
+    
+    <div class="jumbotron text-center">
+      <div class="container">
+        <i class="fas fa-key fa-6x"></i>
+        <h1 class="display-3">List Of Users</h1>
+     <% var i = 1 %>
+            <hr>
+            <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Last Active</th>
+        </tr>
+      </thead>
+      <tbody>
+            <%  foundUsers.forEach(function(user){ var a = user.username%>
+              <tr>
+                <th scope="row"><%=i%></th>
+                <td><%=user.name%></td>
+                <td><%=user.username%></td>
+                <td><%=user.lastLogin%></td>
+                <td>
+                  <form class="" action="/disable" method="POST">
+                    <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+                  </form></td>
+              </tr>
+          <% i++  }) %>
+        </tbody>
+       </table>
+          </div>
+        </div
+    
+        <%- include('../partials/header') %>
+        <script type="text/javascript" src="start.js"></script>
+        
+        <div class="jumbotron text-center">
+          <div class="container">
+            <i class="fas fa-key fa-6x"></i>
+            <h1 class="display-3">List Of Users</h1>
+         <% var i = 1 %>
+                <hr>
+                <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Last Active</th>
+            </tr>
+          </thead>
+          <tbody>
+                <%  foundUsers.forEach(function(user){ var a = user.username%>
+                  <tr>
+                    <th scope="row"><%=i%></th>
+                    <td><%=user.name%></td>
+                    <td><%=user.username%></td>
+                    <td><%=user.lastLogin%></td>
+                    <td>
+                      <form class="" action="/disable" method="POST">
+                        <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+                      </form></td>
+                  </tr>
+              <% i++  }) %>
+            </tbody>
+           </table>
+              </div>
+            </div
+        
+            <%- include('../partials/header') %>
+            <script type="text/javascript" src="start.js"></script>
+            
+            <div class="jumbotron text-center">
+              <div class="container">
+                <i class="fas fa-key fa-6x"></i>
+                <h1 class="display-3">List Of Users</h1>
+             <% var i = 1 %>
+                    <hr>
+                    <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Last Active</th>
+                </tr>
+              </thead>
+              <tbody>
+                    <%  foundUsers.forEach(function(user){ var a = user.username%>
+                      <tr>
+                        <th scope="row"><%=i%></th>
+                        <td><%=user.name%></td>
+                        <td><%=user.username%></td>
+                        <td><%=user.lastLogin%></td>
+                        <td>
+                          <form class="" action="/disable" method="POST">
+                            <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+                          </form></td>
+                      </tr>
+                  <% i++  }) %>
+                </tbody>
+               </table>
+                  </div>
+                </div
+            
+<%- include('../partials/header') %>
+<script type="text/javascript" src="start.js"></script>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <i class="fas fa-key fa-6x"></i>
+    <h1 class="display-3">List Of Users</h1>
+ <% var i = 1 %>
+        <hr>
+        <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Last Active</th>
+    </tr>
+  </thead>
+  <tbody>
+        <%  foundUsers.forEach(function(user){ var a = user.username%>
+          <tr>
+            <th scope="row"><%=i%></th>
+            <td><%=user.name%></td>
+            <td><%=user.username%></td>
+            <td><%=user.lastLogin%></td>
+            <td>
+              <form class="" action="/disable" method="POST">
+                <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+              </form></td>
+          </tr>
+      <% i++  }) %>
+    </tbody>
+   </table>
+      </div>
+    </div
+
+<%- include('../partials/header') %>
+<script type="text/javascript" src="start.js"></script>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <i class="fas fa-key fa-6x"></i>
+    <h1 class="display-3">List Of Users</h1>
+ <% var i = 1 %>
+        <hr>
+        <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Last Active</th>
+    </tr>
+  </thead>
+  <tbody>
+        <%  foundUsers.forEach(function(user){ var a = user.username%>
+          <tr>
+            <th scope="row"><%=i%></th>
+            <td><%=user.name%></td>
+            <td><%=user.username%></td>
+            <td><%=user.lastLogin%></td>
+            <td>
+              <form class="" action="/disable" method="POST">
+                <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+              </form></td>
+          </tr>
+      <% i++  }) %>
+    </tbody>
+   </table>
+      </div>
+    </div
+
+    <%- include('../partials/header') %>
+    <script type="text/javascript" src="start.js"></script>
+    
+    <div class="jumbotron text-center">
+      <div class="container">
+        <i class="fas fa-key fa-6x"></i>
+        <h1 class="display-3">List Of Users</h1>
+     <% var i = 1 %>
+            <hr>
+            <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Last Active</th>
+        </tr>
+      </thead>
+      <tbody>
+            <%  foundUsers.forEach(function(user){ var a = user.username%>
+              <tr>
+                <th scope="row"><%=i%></th>
+                <td><%=user.name%></td>
+                <td><%=user.username%></td>
+                <td><%=user.lastLogin%></td>
+                <td>
+                  <form class="" action="/disable" method="POST">
+                    <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+                  </form></td>
+              </tr>
+          <% i++  }) %>
+        </tbody>
+       </table>
+          </div>
+        </div
+    
+        <%- include('../partials/header') %>
+        <script type="text/javascript" src="start.js"></script>
+        
+        <div class="jumbotron text-center">
+          <div class="container">
+            <i class="fas fa-key fa-6x"></i>
+            <h1 class="display-3">List Of Users</h1>
+         <% var i = 1 %>
+                <hr>
+                <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Last Active</th>
+            </tr>
+          </thead>
+          <tbody>
+                <%  foundUsers.forEach(function(user){ var a = user.username%>
+                  <tr>
+                    <th scope="row"><%=i%></th>
+                    <td><%=user.name%></td>
+                    <td><%=user.username%></td>
+                    <td><%=user.lastLogin%></td>
+                    <td>
+                      <form class="" action="/disable" method="POST">
+                        <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+                      </form></td>
+                  </tr>
+              <% i++  }) %>
+            </tbody>
+           </table>
+              </div>
+            </div
+        
+            <%- include('../partials/header') %>
+            <script type="text/javascript" src="start.js"></script>
+            
+            <div class="jumbotron text-center">
+              <div class="container">
+                <i class="fas fa-key fa-6x"></i>
+                <h1 class="display-3">List Of Users</h1>
+             <% var i = 1 %>
+                    <hr>
+                    <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Last Active</th>
+                </tr>
+              </thead>
+              <tbody>
+                    <%  foundUsers.forEach(function(user){ var a = user.username%>
+                      <tr>
+                        <th scope="row"><%=i%></th>
+                        <td><%=user.name%></td>
+                        <td><%=user.username%></td>
+                        <td><%=user.lastLogin%></td>
+                        <td>
+                          <form class="" action="/disable" method="POST">
+                            <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+                          </form></td>
+                      </tr>
+                  <% i++  }) %>
+                </tbody>
+               </table>
+                  </div>
+                </div
+            
+                <%- include('../partials/header') %>
+                <script type="text/javascript" src="start.js"></script>
+                
+                <div class="jumbotron text-center">
+                  <div class="container">
+                    <i class="fas fa-key fa-6x"></i>
+                    <h1 class="display-3">List Of Users</h1>
+                 <% var i = 1 %>
+                        <hr>
+                        <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">Last Active</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                        <%  foundUsers.forEach(function(user){ var a = user.username%>
+                          <tr>
+                            <th scope="row"><%=i%></th>
+                            <td><%=user.name%></td>
+                            <td><%=user.username%></td>
+                            <td><%=user.lastLogin%></td>
+                            <td>
+                              <form class="" action="/disable" method="POST">
+                                <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+                              </form></td>
+                          </tr>
+                      <% i++  }) %>
+                    </tbody>
+                   </table>
+                      </div>
+                    </div
+                
+<%- include('../partials/header') %>
+<script type="text/javascript" src="start.js"></script>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <i class="fas fa-key fa-6x"></i>
+    <h1 class="display-3">List Of Users</h1>
+ <% var i = 1 %>
+        <hr>
+        <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Last Active</th>
+    </tr>
+  </thead>
+  <tbody>
+        <%  foundUsers.forEach(function(user){ var a = user.username%>
+          <tr>
+            <th scope="row"><%=i%></th>
+            <td><%=user.name%></td>
+            <td><%=user.username%></td>
+            <td><%=user.lastLogin%></td>
+            <td>
+              <form class="" action="/disable" method="POST">
+                <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+              </form></td>
+          </tr>
+      <% i++  }) %>
+    </tbody>
+   </table>
+      </div>
+    </div
+
+<%- include('../partials/header') %>
+<script type="text/javascript" src="start.js"></script>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <i class="fas fa-key fa-6x"></i>
+    <h1 class="display-3">List Of Users</h1>
+ <% var i = 1 %>
+        <hr>
+        <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Last Active</th>
+    </tr>
+  </thead>
+  <tbody>
+        <%  foundUsers.forEach(function(user){ var a = user.username%>
+          <tr>
+            <th scope="row"><%=i%></th>
+            <td><%=user.name%></td>
+            <td><%=user.username%></td>
+            <td><%=user.lastLogin%></td>
+            <td>
+              <form class="" action="/disable" method="POST">
+                <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+              </form></td>
+          </tr>
+      <% i++  }) %>
+    </tbody>
+   </table>
+      </div>
+    </div
+
+    <%- include('../partials/header') %>
+    <script type="text/javascript" src="start.js"></script>
+    
+    <div class="jumbotron text-center">
+      <div class="container">
+        <i class="fas fa-key fa-6x"></i>
+        <h1 class="display-3">List Of Users</h1>
+     <% var i = 1 %>
+            <hr>
+            <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Last Active</th>
+        </tr>
+      </thead>
+      <tbody>
+            <%  foundUsers.forEach(function(user){ var a = user.username%>
+              <tr>
+                <th scope="row"><%=i%></th>
+                <td><%=user.name%></td>
+                <td><%=user.username%></td>
+                <td><%=user.lastLogin%></td>
+                <td>
+                  <form class="" action="/disable" method="POST">
+                    <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+                  </form></td>
+              </tr>
+          <% i++  }) %>
+        </tbody>
+       </table>
+          </div>
+        </div
+    
+        <%- include('../partials/header') %>
+        <script type="text/javascript" src="start.js"></script>
+        
+        <div class="jumbotron text-center">
+          <div class="container">
+            <i class="fas fa-key fa-6x"></i>
+            <h1 class="display-3">List Of Users</h1>
+         <% var i = 1 %>
+                <hr>
+                <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Last Active</th>
+            </tr>
+          </thead>
+          <tbody>
+                <%  foundUsers.forEach(function(user){ var a = user.username%>
+                  <tr>
+                    <th scope="row"><%=i%></th>
+                    <td><%=user.name%></td>
+                    <td><%=user.username%></td>
+                    <td><%=user.lastLogin%></td>
+                    <td>
+                      <form class="" action="/disable" method="POST">
+                        <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+                      </form></td>
+                  </tr>
+              <% i++  }) %>
+            </tbody>
+           </table>
+              </div>
+            </div
+        
+<%- include('../partials/header') %>
+<script type="text/javascript" src="start.js"></script>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <i class="fas fa-key fa-6x"></i>
+    <h1 class="display-3">List Of Users</h1>
+ <% var i = 1 %>
+        <hr>
+        <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Last Active</th>
+    </tr>
+  </thead>
+  <tbody>
+        <%  foundUsers.forEach(function(user){ var a = user.username%>
+          <tr>
+            <th scope="row"><%=i%></th>
+            <td><%=user.name%></td>
+            <td><%=user.username%></td>
+            <td><%=user.lastLogin%></td>
+            <td>
+              <form class="" action="/disable" method="POST">
+                <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+              </form></td>
+          </tr>
+      <% i++  }) %>
+    </tbody>
+   </table>
+      </div>
+    </div
+
+    <%- include('../partials/header') %>
+    <script type="text/javascript" src="start.js"></script>
+    
+    <div class="jumbotron text-center">
+      <div class="container">
+        <i class="fas fa-key fa-6x"></i>
+        <h1 class="display-3">List Of Users</h1>
+     <% var i = 1 %>
+            <hr>
+            <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Last Active</th>
+        </tr>
+      </thead>
+      <tbody>
+            <%  foundUsers.forEach(function(user){ var a = user.username%>
+              <tr>
+                <th scope="row"><%=i%></th>
+                <td><%=user.name%></td>
+                <td><%=user.username%></td>
+                <td><%=user.lastLogin%></td>
+                <td>
+                  <form class="" action="/disable" method="POST">
+                    <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+                  </form></td>
+              </tr>
+          <% i++  }) %>
+        </tbody>
+       </table>
+          </div>
+        </div
+    
+        <%- include('../partials/header') %>
+        <script type="text/javascript" src="start.js"></script>
+        
+        <div class="jumbotron text-center">
+          <div class="container">
+            <i class="fas fa-key fa-6x"></i>
+            <h1 class="display-3">List Of Users</h1>
+         <% var i = 1 %>
+                <hr>
+                <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Last Active</th>
+            </tr>
+          </thead>
+          <tbody>
+                <%  foundUsers.forEach(function(user){ var a = user.username%>
+                  <tr>
+                    <th scope="row"><%=i%></th>
+                    <td><%=user.name%></td>
+                    <td><%=user.username%></td>
+                    <td><%=user.lastLogin%></td>
+                    <td>
+                      <form class="" action="/disable" method="POST">
+                        <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+                      </form></td>
+                  </tr>
+              <% i++  }) %>
+            </tbody>
+           </table>
+              </div>
+            </div
+        
+            <%- include('../partials/header') %>
+            <script type="text/javascript" src="start.js"></script>
+            
+            <div class="jumbotron text-center">
+              <div class="container">
+                <i class="fas fa-key fa-6x"></i>
+                <h1 class="display-3">List Of Users</h1>
+             <% var i = 1 %>
+                    <hr>
+                    <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Last Active</th>
+                </tr>
+              </thead>
+              <tbody>
+                    <%  foundUsers.forEach(function(user){ var a = user.username%>
+                      <tr>
+                        <th scope="row"><%=i%></th>
+                        <td><%=user.name%></td>
+                        <td><%=user.username%></td>
+                        <td><%=user.lastLogin%></td>
+                        <td>
+                          <form class="" action="/disable" method="POST">
+                            <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+                          </form></td>
+                      </tr>
+                  <% i++  }) %>
+                </tbody>
+               </table>
+                  </div>
+                </div
+            
+                <%- include('../partials/header') %>
+                <script type="text/javascript" src="start.js"></script>
+                
+                <div class="jumbotron text-center">
+                  <div class="container">
+                    <i class="fas fa-key fa-6x"></i>
+                    <h1 class="display-3">List Of Users</h1>
+                 <% var i = 1 %>
+                        <hr>
+                        <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">Last Active</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                        <%  foundUsers.forEach(function(user){ var a = user.username%>
+                          <tr>
+                            <th scope="row"><%=i%></th>
+                            <td><%=user.name%></td>
+                            <td><%=user.username%></td>
+                            <td><%=user.lastLogin%></td>
+                            <td>
+                              <form class="" action="/disable" method="POST">
+                                <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+                              </form></td>
+                          </tr>
+                      <% i++  }) %>
+                    </tbody>
+                   </table>
+                      </div>
+                    </div
+                
+<%- include('../partials/header') %>
+<script type="text/javascript" src="start.js"></script>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <i class="fas fa-key fa-6x"></i>
+    <h1 class="display-3">List Of Users</h1>
+ <% var i = 1 %>
+        <hr>
+        <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Last Active</th>
+    </tr>
+  </thead>
+  <tbody>
+        <%  foundUsers.forEach(function(user){ var a = user.username%>
+          <tr>
+            <th scope="row"><%=i%></th>
+            <td><%=user.name%></td>
+            <td><%=user.username%></td>
+            <td><%=user.lastLogin%></td>
+            <td>
+              <form class="" action="/disable" method="POST">
+                <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+              </form></td>
+          </tr>
+      <% i++  }) %>
+    </tbody>
+   </table>
+      </div>
+    </div
+
+    <%- include('../partials/header') %>
+    <script type="text/javascript" src="start.js"></script>
+    
+    <div class="jumbotron text-center">
+      <div class="container">
+        <i class="fas fa-key fa-6x"></i>
+        <h1 class="display-3">List Of Users</h1>
+     <% var i = 1 %>
+            <hr>
+            <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Last Active</th>
+        </tr>
+      </thead>
+      <tbody>
+            <%  foundUsers.forEach(function(user){ var a = user.username%>
+              <tr>
+                <th scope="row"><%=i%></th>
+                <td><%=user.name%></td>
+                <td><%=user.username%></td>
+                <td><%=user.lastLogin%></td>
+                <td>
+                  <form class="" action="/disable" method="POST">
+                    <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+                  </form></td>
+              </tr>
+          <% i++  }) %>
+        </tbody>
+       </table>
+          </div>
+        </div
+    
+        <%- include('../partials/header') %>
+        <script type="text/javascript" src="start.js"></script>
+        
+        <div class="jumbotron text-center">
+          <div class="container">
+            <i class="fas fa-key fa-6x"></i>
+            <h1 class="display-3">List Of Users</h1>
+         <% var i = 1 %>
+                <hr>
+                <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Last Active</th>
+            </tr>
+          </thead>
+          <tbody>
+                <%  foundUsers.forEach(function(user){ var a = user.username%>
+                  <tr>
+                    <th scope="row"><%=i%></th>
+                    <td><%=user.name%></td>
+                    <td><%=user.username%></td>
+                    <td><%=user.lastLogin%></td>
+                    <td>
+                      <form class="" action="/disable" method="POST">
+                        <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+                      </form></td>
+                  </tr>
+              <% i++  }) %>
+            </tbody>
+           </table>
+              </div>
+            </div
+        
+            <%- include('../partials/header') %>
+            <script type="text/javascript" src="start.js"></script>
+            
+            <div class="jumbotron text-center">
+              <div class="container">
+                <i class="fas fa-key fa-6x"></i>
+                <h1 class="display-3">List Of Users</h1>
+             <% var i = 1 %>
+                    <hr>
+                    <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Last Active</th>
+                </tr>
+              </thead>
+              <tbody>
+                    <%  foundUsers.forEach(function(user){ var a = user.username%>
+                      <tr>
+                        <th scope="row"><%=i%></th>
+                        <td><%=user.name%></td>
+                        <td><%=user.username%></td>
+                        <td><%=user.lastLogin%></td>
+                        <td>
+                          <form class="" action="/disable" method="POST">
+                            <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+                          </form></td>
+                      </tr>
+                  <% i++  }) %>
+                </tbody>
+               </table>
+                  </div>
+                </div
+            
+<%- include('../partials/header') %>
+<script type="text/javascript" src="start.js"></script>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <i class="fas fa-key fa-6x"></i>
+    <h1 class="display-3">List Of Users</h1>
+ <% var i = 1 %>
+        <hr>
+        <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Last Active</th>
+    </tr>
+  </thead>
+  <tbody>
+        <%  foundUsers.forEach(function(user){ var a = user.username%>
+          <tr>
+            <th scope="row"><%=i%></th>
+            <td><%=user.name%></td>
+            <td><%=user.username%></td>
+            <td><%=user.lastLogin%></td>
+            <td>
+              <form class="" action="/disable" method="POST">
+                <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+              </form></td>
+          </tr>
+      <% i++  }) %>
+    </tbody>
+   </table>
+      </div>
+    </div
+
+    <%- include('../partials/header') %>
+    <script type="text/javascript" src="start.js"></script>
+    
+    <div class="jumbotron text-center">
+      <div class="container">
+        <i class="fas fa-key fa-6x"></i>
+        <h1 class="display-3">List Of Users</h1>
+     <% var i = 1 %>
+            <hr>
+            <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Last Active</th>
+        </tr>
+      </thead>
+      <tbody>
+            <%  foundUsers.forEach(function(user){ var a = user.username%>
+              <tr>
+                <th scope="row"><%=i%></th>
+                <td><%=user.name%></td>
+                <td><%=user.username%></td>
+                <td><%=user.lastLogin%></td>
+                <td>
+                  <form class="" action="/disable" method="POST">
+                    <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+                  </form></td>
+              </tr>
+          <% i++  }) %>
+        </tbody>
+       </table>
+          </div>
+        </div
+    
+        <%- include('../partials/header') %>
+        <script type="text/javascript" src="start.js"></script>
+        
+        <div class="jumbotron text-center">
+          <div class="container">
+            <i class="fas fa-key fa-6x"></i>
+            <h1 class="display-3">List Of Users</h1>
+         <% var i = 1 %>
+                <hr>
+                <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Last Active</th>
+            </tr>
+          </thead>
+          <tbody>
+                <%  foundUsers.forEach(function(user){ var a = user.username%>
+                  <tr>
+                    <th scope="row"><%=i%></th>
+                    <td><%=user.name%></td>
+                    <td><%=user.username%></td>
+                    <td><%=user.lastLogin%></td>
+                    <td>
+                      <form class="" action="/disable" method="POST">
+                        <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+                      </form></td>
+                  </tr>
+              <% i++  }) %>
+            </tbody>
+           </table>
+              </div>
+            </div
+        
+            <%- include('../partials/header') %>
+            <script type="text/javascript" src="start.js"></script>
+            
+            <div class="jumbotron text-center">
+              <div class="container">
+                <i class="fas fa-key fa-6x"></i>
+                <h1 class="display-3">List Of Users</h1>
+             <% var i = 1 %>
+                    <hr>
+                    <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Last Active</th>
+                </tr>
+              </thead>
+              <tbody>
+                    <%  foundUsers.forEach(function(user){ var a = user.username%>
+                      <tr>
+                        <th scope="row"><%=i%></th>
+                        <td><%=user.name%></td>
+                        <td><%=user.username%></td>
+                        <td><%=user.lastLogin%></td>
+                        <td>
+                          <form class="" action="/disable" method="POST">
+                            <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+                          </form></td>
+                      </tr>
+                  <% i++  }) %>
+                </tbody>
+               </table>
+                  </div>
+                </div
+            
+<%- include('../partials/header') %>
+<script type="text/javascript" src="start.js"></script>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <i class="fas fa-key fa-6x"></i>
+    <h1 class="display-3">List Of Users</h1>
+ <% var i = 1 %>
+        <hr>
+        <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Last Active</th>
+    </tr>
+  </thead>
+  <tbody>
+        <%  foundUsers.forEach(function(user){ var a = user.username%>
+          <tr>
+            <th scope="row"><%=i%></th>
+            <td><%=user.name%></td>
+            <td><%=user.username%></td>
+            <td><%=user.lastLogin%></td>
+            <td>
+              <form class="" action="/disable" method="POST">
+                <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+              </form></td>
+          </tr>
+      <% i++  }) %>
+    </tbody>
+   </table>
+      </div>
+    </div
+
+    <%- include('../partials/header') %>
+    <script type="text/javascript" src="start.js"></script>
+    
+    <div class="jumbotron text-center">
+      <div class="container">
+        <i class="fas fa-key fa-6x"></i>
+        <h1 class="display-3">List Of Users</h1>
+     <% var i = 1 %>
+            <hr>
+            <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Last Active</th>
+        </tr>
+      </thead>
+      <tbody>
+            <%  foundUsers.forEach(function(user){ var a = user.username%>
+              <tr>
+                <th scope="row"><%=i%></th>
+                <td><%=user.name%></td>
+                <td><%=user.username%></td>
+                <td><%=user.lastLogin%></td>
+                <td>
+                  <form class="" action="/disable" method="POST">
+                    <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+                  </form></td>
+              </tr>
+          <% i++  }) %>
+        </tbody>
+       </table>
+          </div>
+        </div
+    
+        <%- include('../partials/header') %>
+        <script type="text/javascript" src="start.js"></script>
+        
+        <div class="jumbotron text-center">
+          <div class="container">
+            <i class="fas fa-key fa-6x"></i>
+            <h1 class="display-3">List Of Users</h1>
+         <% var i = 1 %>
+                <hr>
+                <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Last Active</th>
+            </tr>
+          </thead>
+          <tbody>
+                <%  foundUsers.forEach(function(user){ var a = user.username%>
+                  <tr>
+                    <th scope="row"><%=i%></th>
+                    <td><%=user.name%></td>
+                    <td><%=user.username%></td>
+                    <td><%=user.lastLogin%></td>
+                    <td>
+                      <form class="" action="/disable" method="POST">
+                        <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+                      </form></td>
+                  </tr>
+              <% i++  }) %>
+            </tbody>
+           </table>
+              </div>
+            </div
+        
+            <%- include('../partials/header') %>
+            <script type="text/javascript" src="start.js"></script>
+            
+            <div class="jumbotron text-center">
+              <div class="container">
+                <i class="fas fa-key fa-6x"></i>
+                <h1 class="display-3">List Of Users</h1>
+             <% var i = 1 %>
+                    <hr>
+                    <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Last Active</th>
+                </tr>
+              </thead>
+              <tbody>
+                    <%  foundUsers.forEach(function(user){ var a = user.username%>
+                      <tr>
+                        <th scope="row"><%=i%></th>
+                        <td><%=user.name%></td>
+                        <td><%=user.username%></td>
+                        <td><%=user.lastLogin%></td>
+                        <td>
+                          <form class="" action="/disable" method="POST">
+                            <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+                          </form></td>
+                      </tr>
+                  <% i++  }) %>
+                </tbody>
+               </table>
+                  </div>
+                </div
+            
+                <%- include('../partials/header') %>
+                <script type="text/javascript" src="start.js"></script>
+                
+                <div class="jumbotron text-center">
+                  <div class="container">
+                    <i class="fas fa-key fa-6x"></i>
+                    <h1 class="display-3">List Of Users</h1>
+                 <% var i = 1 %>
+                        <hr>
+                        <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">Last Active</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                        <%  foundUsers.forEach(function(user){ var a = user.username%>
+                          <tr>
+                            <th scope="row"><%=i%></th>
+                            <td><%=user.name%></td>
+                            <td><%=user.username%></td>
+                            <td><%=user.lastLogin%></td>
+                            <td>
+                              <form class="" action="/disable" method="POST">
+                                <button class="btn btn-danger" type="submit" name="username" value=<%=a%> >disable</button>
+                              </form></td>
+                          </tr>
+                      <% i++  }) %>
+                    </tbody>
+                   </table>
+                      </div>
+                    </div
+                
+                                                                                                                                                                                                            
