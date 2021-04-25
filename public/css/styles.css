@@ -1186,8 +1186,50 @@
 }
 
 /*-----forum css-------*/
-
-.qna-container{
-  border: 1px #ccc solid;
-  padding: 10px;
+.feed-heading{
+  font-size: 3rem;
+  padding: 2rem 0;
+  text-align: center;
+  font-weight: 600;
+  color: red;
 }
+.feed-content{
+  width: 60%;
+  margin: 4rem auto;
+  padding: 2rem;
+  outline: 8px solid royalblue;
+}
+
+.question{
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+
+.user-info p{
+  font-weight: 400;
+
+}
+
+.answer{
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #4e5863;
+}
+.feed-row-1{
+  display: flex;
+  justify-content: space-between;
+}
+.thumbs-up, .thumbs-down{
+  padding:0 0.5rem;
+}
+
+.thumbs-up{
+  color: #00FF00;
+}
+
+.thumbs-down{
+  color: red;
+}
+
+
