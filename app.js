@@ -244,7 +244,7 @@ app.post("/register", function(req, res){
       res.redirect("/register");
     } else {
       passport.authenticate("local")(req, res, function(){
-        res.redirect("/added");
+        res.redirect("/forum");
       });
     }
   });
@@ -271,17 +271,11 @@ app.post("/AskAQues", (req, res)=>{
   })
   ques.save()
    .then(doc => {
-     console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
-     console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
-     console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
-     console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
-     console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
-     console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
-     console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
-     console.log(doc)
+    res.redirect('/forum');
    })
    .catch(err => {
      console.error(err)
+     res.redirect('/forum');
    })
 
   console.log(req);
