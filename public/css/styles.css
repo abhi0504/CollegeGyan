@@ -897,7 +897,7 @@ body{
   font-size: 2.8rem;
   padding: 2rem 0 1.5rem;
   color: #3772FF;
-  
+
 }
 
 /* Row 1 */
@@ -1132,7 +1132,7 @@ body{
   margin-bottom: 25px;
 }
 .responsive-table .table-header {
-  background-color: #95A5A6;
+  background-color: darkslategrey;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -1340,6 +1340,8 @@ body{
   width: 100%;
   overflow: hidden;
 }
+<<<<<<< HEAD
+=======
 
 /* Ask a Question  */
 .aaq-heading{
@@ -1352,3 +1354,4 @@ body{
   margin: 0 auto;
   padding: 1rem;
 }
+>>>>>>> 948b016295c270f5b663cf5c462325053916625f
