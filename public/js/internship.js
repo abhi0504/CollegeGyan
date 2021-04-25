@@ -6,7 +6,7 @@ window.onload = function(){
         data: {
             labels: ['2016', '2017', '2018', '2019', '2020', '2021'],
             datasets: [{
-                label: '# of Votes',
+                label: 'NO. of internship offers',
                 data: [178, 198, 201, 219, 269, 215],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
@@ -64,7 +64,7 @@ window.onload = function(){
     //     },
     //     options:{
     //         responsive: true,
-    //         maintainAspectRatio: false 
+    //         maintainAspectRatio: false
     //     }
     // });
 }

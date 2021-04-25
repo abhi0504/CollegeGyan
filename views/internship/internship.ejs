@@ -1,8 +1,10 @@
 <%- include('../partials/header') %>
     <main>
-        <h2 class="internship-title">DTU Internships</h2>
+        <h2  style="font-size: 2.8rem;
+        padding: 2rem 0 1.5rem;
+        color: #3772FF;" class="internship-title"> DTU Internships (NO. of offers)</h2>
         <section class="chart section">
-            
+
             <div class="canvas">
                 <canvas id="myChart" width="200" height="200"></canvas>
             </div>
@@ -13,39 +15,41 @@
 
         <hr class="dotted-hr">
 
-        <section class="company-visiting">
-            <h2 class="company-title">Companies Visiting </h2>
+        <section  class="company-visiting">
+            <h2 class="company-title" style="font-size: 2.8rem;
+            padding: 2rem 0 1.5rem;
+            color: red;" > Companies Visiting </h2>
             <div class="company-table">
                     <ul class="responsive-table">
-                      <li class="table-header">
+                      <li style="color: #3772FF" class="table-header">
                         <div class="col col-1">Company</div>
                         <div class="col col-2">Students Selected</div>
                         <div class="col col-3">Internship Duration</div>
                         <div class="col col-4">Stipend Offered</div>
                       </li>
                       <li class="table-row">
-                        <div class="col col-1" data-label="Job Id">Comp.1</div>
+                        <div class="col col-1" data-label="Job Id">Samsung</div>
                         <div class="col col-2" data-label="Customer Name">5</div>
                         <div class="col col-3" data-label="Amount">2 months</div>
                         <div class="col col-4" data-label="Payment Status">Rs. 50,000</div>
                       </li>
                       <li class="table-row">
-                        <div class="col col-1" data-label="Job Id">Comp.2</div>
+                        <div class="col col-1" data-label="Job Id">Atlassian</div>
+                        <div class="col col-2" data-label="Customer Name">8</div>
+                        <div class="col col-3" data-label="Amount">2 months</div>
+                        <div class="col col-4" data-label="Payment Status">Rs. 40,000</div>
+                      </li>
+                      <li class="table-row">
+                        <div class="col col-1" data-label="Job Id">Sprinklr</div>
+                        <div class="col col-2" data-label="Customer Name">5</div>
+                        <div class="col col-3" data-label="Amount">2 months</div>
+                        <div class="col col-4" data-label="Payment Status">Rs. 75,000</div>
+                      </li>
+                      <li class="table-row">
+                        <div class="col col-1" data-label="Job Id">Morgan Stanley</div>
                         <div class="col col-2" data-label="Customer Name">10</div>
                         <div class="col col-3" data-label="Amount">2 months</div>
-                        <div class="col col-4" data-label="Payment Status">Rs. 20,000</div>
-                      </li>
-                      <li class="table-row">
-                        <div class="col col-1" data-label="Job Id">Comp.3</div>
-                        <div class="col col-2" data-label="Customer Name">12</div>
-                        <div class="col col-3" data-label="Amount">2 months</div>
-                        <div class="col col-4" data-label="Payment Status">Rs. 5,000</div>
-                      </li>
-                      <li class="table-row">
-                        <div class="col col-1" data-label="Job Id">Comp.4</div>
-                        <div class="col col-2" data-label="Customer Name">13</div>
-                        <div class="col col-3" data-label="Amount">2 months</div>
-                        <div class="col col-4" data-label="Payment Status">Rs. 10,000</div>
+                        <div class="col col-4" data-label="Payment Status">Rs. 40,000</div>
                       </li>
                     </ul>
             </div>
