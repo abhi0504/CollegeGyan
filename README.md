@@ -1,5 +1,7 @@
 ## CollegeGyan
 
+[Link for the application](https://calm-plateau-10314.herokuapp.com/)
+
 ### by team Hello_World
 
 A one-stop platform for faster, clearer and clutter free access to all the “gyaan” required during college life.
